@@ -1,0 +1,89 @@
+body {
+    font-family: Consolas, monospace; /* Шрифт, часто используемый в консолях */
+    margin: 0;
+    padding: 0;
+    background-color: #1d1f21; /* Темно-зеленый фон */
+    color: #00ff00; /* Зеленый текст */
+}
+
+header {
+    background-color: #1d1f21; /* Темно-зеленый фон для заголовка */
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #00ff00; /* Зеленый текст для заголовка */
+}
+
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #1d1f21; /* Темно-зеленый фон для основного блока */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 10px;
+    background-color: #333842; /* Темно-зеленый фон для кнопок */
+    color: #00ff00; /* Зеленый текст для кнопок */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: Consolas, monospace; /* Моноширинный шрифт */
+}
+
+.active-tab {
+    background-color: #222; /* Темно-зеленый фон для активной вкладки */
+}
+
+.content {
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #333842;
+    border-radius: 5px;
+    background-color: #1d1f21; /* Темно-зеленый фон для текстовых полей */
+    color: #00ff00; /* Зеленый текст для текстовых полей */
+}
+
+input#shiftInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #333842;
+    border-radius: 5px;
+    background-color: #1d1f21; /* Темно-зеленый фон для инпута */
+    color: #00ff00; /* Зеленый текст для инпута */
+}
+
+button#processButton {
+    background-color: #00ff00; /* Зеленый цвет для кнопки "Обработать текст" */
+    color: #1d1f21; /* Темный текст для кнопки "Обработать текст" */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: Consolas, monospace; /* Моноширинный шрифт */
+}
+
+button#processButton:hover {
+    background-color: #007700; /* Зеленый цвет при наведении на кнопку */
+}
+
+textarea#outputText {
+    height: 150px;
+}
