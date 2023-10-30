@@ -1,13 +1,13 @@
 body {
-    font-family: Consolas, monospace; /* Шрифт, часто используемый в консолях */
+    font-family: Consolas, monospace;
     margin: 0;
     padding: 0;
-    background-color: #1d1f21; /* Темно-зеленый фон */
-    color: #00ff00; /* Зеленый текст */
+    background-color: #1d1f21;
+    color: #00ff00;
 }
 
 header {
-    background-color: #1d1f21; /* Темно-зеленый фон для заголовка */
+    background-color: #1d1f21;
     text-align: center;
     padding: 20px 0;
 }
@@ -15,13 +15,13 @@ header {
 h1 {
     margin: 0;
     font-size: 28px;
-    color: #00ff00; /* Зеленый текст для заголовка */
+    color: #00ff00;
 }
 
 main {
     max-width: 600px;
     margin: 20px auto;
-    background-color: #1d1f21; /* Темно-зеленый фон для основного блока */
+    background-color: #1d1f21;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -35,16 +35,16 @@ main {
 button {
     flex: 1;
     padding: 10px;
-    background-color: #333842; /* Темно-зеленый фон для кнопок */
-    color: #00ff00; /* Зеленый текст для кнопок */
+    background-color: #333842;
+    color: #00ff00;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
-    font-family: Consolas, monospace; /* Моноширинный шрифт */
+    font-family: Consolas, monospace;
 }
 
 .active-tab {
-    background-color: #222; /* Темно-зеленый фон для активной вкладки */
+    background-color: #222;
 }
 
 .content {
@@ -57,8 +57,8 @@ textarea {
     margin-bottom: 10px;
     border: 1px solid #333842;
     border-radius: 5px;
-    background-color: #1d1f21; /* Темно-зеленый фон для текстовых полей */
-    color: #00ff00; /* Зеленый текст для текстовых полей */
+    background-color: #1d1f21;
+    color: #00ff00;
 }
 
 input#shiftInput {
@@ -67,21 +67,21 @@ input#shiftInput {
     margin-bottom: 10px;
     border: 1px solid #333842;
     border-radius: 5px;
-    background-color: #1d1f21; /* Темно-зеленый фон для инпута */
-    color: #00ff00; /* Зеленый текст для инпута */
+    background-color: #1d1f21;
+    color: #00ff00;
 }
 
 button#processButton {
-    background-color: #00ff00; /* Зеленый цвет для кнопки "Обработать текст" */
-    color: #1d1f21; /* Темный текст для кнопки "Обработать текст" */
+    background-color: #00ff00;
+    color: #1d1f21;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    font-family: Consolas, monospace; /* Моноширинный шрифт */
+    font-family: Consolas, monospace;
 }
 
 button#processButton:hover {
-    background-color: #007700; /* Зеленый цвет при наведении на кнопку */
+    background-color: #007700;
 }
 
 textarea#outputText {
