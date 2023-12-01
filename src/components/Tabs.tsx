@@ -18,14 +18,14 @@ const Tabs: FC<TabsProps> = (props) => {
         className={isEncodingTab ? activeTabClassName : ""}
         onClick={() => props.setMode(CaesarMode.ENCODING)}
       >
-        Кодировать
+        Кодувати
       </button>
       <button
         id="decodeTab"
         className={isDecodingTab ? activeTabClassName : ""}
         onClick={() => props.setMode(CaesarMode.DECODING)}
       >
-        Декодировать
+        Декодувати
       </button>
     </div>
   );

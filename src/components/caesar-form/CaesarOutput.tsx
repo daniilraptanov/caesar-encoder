@@ -8,7 +8,7 @@ const CaesarOutput: FC<CaesarOutputProps> = (props) => {
   return (
     <textarea
       id="outputText"
-      placeholder="Результат будет здесь"
+      placeholder="Результат буде тут"
       value={props.result}
     ></textarea>
   );

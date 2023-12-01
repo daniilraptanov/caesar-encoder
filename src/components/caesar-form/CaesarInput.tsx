@@ -31,19 +31,19 @@ const CaesarInput: FC<CaesarInputProps> = (props) => {
     <>
       <textarea
         id="inputText"
-        placeholder="Введите текст"
+        placeholder="Введіть текст"
         onChange={textInputHandler}
       ></textarea>
       <input
         type="number"
         id="shiftInput"
-        placeholder="Сдвиг (по умолчанию 3)"
+        placeholder="Зсув (за замовчуванням 3)"
         onChange={shiftInputHandler}
       />
       <button 
         id="processButton"
         onClick={textProcessingHandler}
-      >Обработать текст</button>
+      >Опрацювати текст</button>
     </>
   );
 };
