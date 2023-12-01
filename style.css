@@ -1,0 +1,89 @@
+body {
+    font-family: Consolas, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #1d1f21;
+    color: #00ff00;
+}
+
+header {
+    background-color: #1d1f21;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #00ff00;
+}
+
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #1d1f21;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 10px;
+    background-color: #333842;
+    color: #00ff00;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: Consolas, monospace;
+}
+
+.active-tab {
+    background-color: #222;
+}
+
+.content {
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #333842;
+    border-radius: 5px;
+    background-color: #1d1f21;
+    color: #00ff00;
+}
+
+input#shiftInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #333842;
+    border-radius: 5px;
+    background-color: #1d1f21;
+    color: #00ff00;
+}
+
+button#processButton {
+    background-color: #00ff00;
+    color: #1d1f21;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: Consolas, monospace;
+}
+
+button#processButton:hover {
+    background-color: #007700;
+}
+
+textarea#outputText {
+    height: 150px;
+}
