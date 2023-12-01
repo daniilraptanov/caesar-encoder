@@ -7,6 +7,7 @@ import Tabs from "./Tabs";
 
 const App: FC = () => {
   const [mode, setMode] = useState<CaesarMode>(CaesarMode.ENCODING);
+  const [result, setResult] = useState<string>("");
 
   return (
     <>
@@ -14,8 +15,8 @@ const App: FC = () => {
       <main>
         <Tabs mode={mode} setMode={setMode} />
         <div className="content">
-          <CaesarInput />
-          <CaesarOutput />
+          <CaesarInput mode={mode} setResultCallback={setResult} />
+          <CaesarOutput result={result} />
         </div>
       </main>
     </>

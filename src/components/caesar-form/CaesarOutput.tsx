@@ -1,10 +1,15 @@
 import React, { FC } from "react";
 
-const CaesarOutput: FC = () => {
+interface CaesarOutputProps {
+  result: string;
+}
+
+const CaesarOutput: FC<CaesarOutputProps> = (props) => {
   return (
     <textarea
       id="outputText"
       placeholder="Результат будет здесь"
+      value={props.result}
     ></textarea>
   );
 };

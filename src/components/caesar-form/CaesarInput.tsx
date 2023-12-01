@@ -1,6 +1,11 @@
 import React, { ChangeEvent, FC, useState } from "react";
+import caesarEncoderServiceFactory from "../../services/CaesarEncoderServiceImpl";
+import { CaesarMode } from "../../types/enums/CaesarMode";
 
-interface CaesarInputProps {}
+interface CaesarInputProps {
+  mode: CaesarMode;
+  setResultCallback: (result: string) => void;
+}
 
 const CaesarInput: FC<CaesarInputProps> = (props) => {
   const [shift, setShift] = useState<number>();
@@ -13,6 +18,14 @@ const CaesarInput: FC<CaesarInputProps> = (props) => {
   const textInputHandler = (e: ChangeEvent<HTMLTextAreaElement>) => {
     setText(e.target.value);
   };
+
+  const textProcessingHandler = () => {
+    const service = caesarEncoderServiceFactory();
+    const result = props.mode === CaesarMode.ENCODING 
+      ? service.encode(text, shift)
+      : service.decode(text, shift);
+    props.setResultCallback(result);
+  }
 
   return (
     <>
@@ -27,7 +40,10 @@ const CaesarInput: FC<CaesarInputProps> = (props) => {
         placeholder="Сдвиг (по умолчанию 3)"
         onChange={shiftInputHandler}
       />
-      <button id="processButton">Обработать текст</button>
+      <button 
+        id="processButton"
+        onClick={textProcessingHandler}
+      >Обработать текст</button>
     </>
   );
 };
